@@ -1,5 +1,5 @@
 import mythic_container
-from agent_functions.builder import MyAgent
+from Payload_Type.my_agent.agent_functions.builder import MyAgent
 
 
 # This service is loaded by the Mythic container runtime.
