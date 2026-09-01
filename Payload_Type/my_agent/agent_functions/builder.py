@@ -75,7 +75,7 @@ class MyAgent(PayloadType):
                             return item.get("value", item.get("default_value", default))
         return default
 
-    async def build(self, build_data: BuildData) -> BuildResponse:
+    async def build(self, build_data) -> BuildResponse:
         resp = BuildResponse(status=BuildStatus.Success)
         print("[my_agent] Starting payload build...")
 
