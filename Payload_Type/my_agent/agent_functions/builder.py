@@ -11,10 +11,12 @@ from mythic_container.MythicCommandBase import *
 from mythic_container.MythicRPC import *
 
 
+
+
 class MyAgent(PayloadType):
     name = "my_agent"
-    file_extension = "exe"
-    author = "@yourname"
+    file_extension = "exe, shellcode"
+    author = "@baklogr"
     supported_os = [SupportedOS.Windows]
     wrapper = False
     wrapped_payloads = []
@@ -27,7 +29,7 @@ class MyAgent(PayloadType):
         BuildParameter(
             name="output_type",
             description="Select the final payload format.",
-            parameter_type="String",
+            parameter_type=BuildParameterType.String,
             choices=["EXE", "Shellcode"],
             required=True,
             default_value="Shellcode",
@@ -35,7 +37,7 @@ class MyAgent(PayloadType):
         BuildParameter(
             name="shellcode_format",
             description="Shellcode output format.",
-            parameter_type="String",
+            parameter_type=BuildParameterType.String,
             choices=["binary", "c", "powershell", "python"],
             required=True,
             default_value="binary",
@@ -43,16 +45,16 @@ class MyAgent(PayloadType):
         BuildParameter(
             name="callback_interval",
             description="Delay between get_tasking polls in seconds.",
-            parameter_type="String",
+            parameter_type=BuildParameterType.Number,
             required=True,
-            default_value="30",
+            default_value=30,
         ),
         BuildParameter(
             name="server_url",
             description="Base URL of the Mythic HTTP C2 endpoint.",
-            parameter_type="String",
+            parameter_type=BuildParameterType.String,
             required=True,
-            default_value="https://127.0.0.1:8080",
+            default_value="https://127.0.0.1:7443",
         ),
     ]
 
