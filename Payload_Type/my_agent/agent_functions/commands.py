@@ -1,3 +1,4 @@
+import mythic_container.MythicCommandBase as MythicCommandBase
 from mythic_container.MythicCommandBase import *
 
 
