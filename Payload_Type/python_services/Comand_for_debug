@@ -1,0 +1,6 @@
+RABBITMQ_USER="mythic_user" \
+RABBITMQ_PASSWORD="kNKz0X1VQyp9sw8tW8NBexnZiqMzJf" \
+RABBITMQ_VHOST="mythic_vhost" \
+RABBITMQ_HOST="127.0.0.1" \
+RABBITMQ_PORT="5672" \
+python ./main.py
