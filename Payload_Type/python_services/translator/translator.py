@@ -4,10 +4,10 @@ import base64
 from mythic_container.TranslationBase import *
 
 
-class myPythonTranslation(TranslationContainer):
-    name = "myPythonTranslation"
+class KortTranslation(TranslationContainer):
+    name = "KortTranslation"
     description = "python translation service that doesn't change anything"
-    author = "@its_a_feature_"
+    author = "Backlogr"
 
     async def generate_keys(self, inputMsg: TrGenerateEncryptionKeysMessage) -> TrGenerateEncryptionKeysMessageResponse:
         response = TrGenerateEncryptionKeysMessageResponse(Success=True)
