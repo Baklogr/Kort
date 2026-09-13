@@ -5,7 +5,8 @@
 #define PROFILE_MYTHIC_HTTP
 #define CONFIG_SLEEP 3
 #define CONFIG_SLEEP_JITTER 0
-#define CONFIG_HOST L"192.168.56.112"
+#define CONFIG_HOST L"192.168.56.101"
+#define CONFIG_PORT 80
 #define CONFIG_UA L"Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko"
 #define CONFIG_POST_URI L"/data"
 #define CONFIG_UUID "9ed9825a-5fec-42d6-82a4-80bf77c20848"
