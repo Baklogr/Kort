@@ -35,7 +35,7 @@ BOOL InitConfig(void) {
     kortConfig->endPoint       = dup_wstr(CONFIG_POST_URI);
     kortConfig->userAgent      = dup_wstr(CONFIG_UA);
     kortConfig->httpMethod     = dup_wstr(L"POST");
-    kortConfig->isSSL          = FALSE;
+    kortConfig->isSSL          = CONFIG_SSL;
     kortConfig->isProxyEnabled = FALSE;
     kortConfig->proxyURL       = NULL;
     kortConfig->sleeptime      = CONFIG_SLEEP_JITTER ? CONFIG_SLEEP_JITTER : 5000;
