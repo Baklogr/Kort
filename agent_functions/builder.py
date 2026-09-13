@@ -28,7 +28,7 @@ class KortAgent(PayloadType):
             default_value="shellcode"
         )
     ]
-    agent_path = pathlib.Path(".") / "kort"
+    agent_path = pathlib.Path(".")
     agent_icon_path = agent_path / "agent_functions" / "kort.png"
     agent_code_path = agent_path / "agent_code"
 
