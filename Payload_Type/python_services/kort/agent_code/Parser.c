@@ -69,5 +69,6 @@ PWCHAR getWString(PParser parser, PSIZE_T size) {
 
 VOID freeParser(PParser parser) {
     if (!parser) return;
+    if (parser->original) LI_FN(LocalFree)(parser->original);
     LI_FN(LocalFree)(parser);
 }

@@ -12,7 +12,7 @@ static PVOID li_alloc(SIZE_T size) {
 }
 
 static PVOID li_realloc(PVOID ptr, SIZE_T size) {
-    return LI_FN(LocalReAlloc)(ptr, size, LMEM_MOVEABLE | LMEM_ZEROINIT);
+    return LI_FN(LocalReAlloc)(ptr, size, LMEM_FIXED | LMEM_ZEROINIT);
 }
 
 static VOID li_memcpy(PVOID dst, const VOID* src, SIZE_T size) {
